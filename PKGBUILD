@@ -48,8 +48,9 @@ depends=(
 )
 
 _dir="geometry-release-release-melodic-tf-${pkgver}-${_pkgver_patch}"
-source=("${pkgname}-${pkgver}-${_pkgver_patch}.tar.gz"::"https://github.com/ros-gbp/geometry-release/archive/release/melodic/tf/${pkgver}-${_pkgver_patch}.tar.gz")
-sha256sums=('00d706fa94be4c4348556e8985dae8be407e76aae3f767e92dbd35e206f5ab03')
+source=("${pkgname}-${pkgver}-${_pkgver_patch}.tar.gz"::"https://github.com/ros-gbp/geometry-release/archive/release/melodic/tf/${pkgver}-${_pkgver_patch}.tar.gz" 			cmake_signals_fix.patch)
+sha256sums=('00d706fa94be4c4348556e8985dae8be407e76aae3f767e92dbd35e206f5ab03'
+			'5ea32d7dbd0e0c224ca13484c8bead320f246899be166d5971a40a6664876079')
 
 build() {
 	# Use ROS environment variables.
