@@ -57,7 +57,7 @@ build() {
 	[ -f /opt/ros/melodic/setup.bash ] && source /opt/ros/melodic/setup.bash
 
 	# Fix boost_signals error
-        cd geometry-release-release-melodic-tf-1.12.0-0/
+        cd ${_dir}
         rm -rf CMakeLists.txt
         wget https://raw.githubusercontent.com/ros/geometry/melodic-devel/tf/CMakeLists.txt
 
