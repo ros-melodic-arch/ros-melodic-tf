@@ -54,7 +54,7 @@ sha256sums=('61a278bdd50e00ea442055d9f70eaf82b5a36916739edca188fa1b71a59507b4'
 
 prepare() {
   cd "${srcdir}/${_dir}"
-  patch -uN CMakeLists.txt ../../CMakeLists-signal.patch || return 1
+  patch -uN CMakeLists.txt "${srcdir}/CMakeLists-signal.patch" || return 1
 }
 
 build() {
